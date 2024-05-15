@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* Reset   forma movil*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@media (max-width: 1800px) and (min-width: 300px){
+
+
+    
+}
+
+/* Main Styling */
+html,
+body {
+
+    background-color: hsla(4, 13%, 74%, 0.654);
+    font-family: 'Montserrat', sans-serif;
+}
+
+h2 {
+    background-color: hsla(0, 41%, 92%, 0.333);
+    color: #281f28;
+    font-size: 1.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding-bottom: 50px;
+    margin-left:0px;
+}
+
+h4 {
+    
+    font-size: 1.4rem;
+    color: #2f2a2f;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+    font-weight: 500;
+}
+
+p {
+    color: #1b181b;
+    font-size: 1rem;
+    margin: 10px 0;
+    line-height: 1.7em;
+}
+
+a {
+    color: #e117e1;
+    text-decoration: none;
+}
+
+/* Utility Classes */
+.container {
+    background-color: rgb(240, 240, 240);
+    margin: auto;
+    max-width: 1300px;
+    overflow: auto;
+    padding: 0 20px;
+}
+
+.large {
+    font-size: 20px;
+}
+
+.btn {
+    display: inline-block;
+    font-size: 15px;
+    padding: 15px 40px;
+    letter-spacing: 1px;
+}
+
+.btn-outline {
+    background: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+.btn-outline:hover {
+    background: #fff;
+    color: #000;
+}
+
+/* Navbar */
+#navbar {
+    background-color: rgb(240, 240, 240);
+    overflow: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#navbar a {
+    color: #000;
+}
+
+#navbar .logo {
+    float: left;
+    padding-top: 12px;
+}
+
+#navbar img {
+    height: 40px;
+    
+}
+
+#navbar ul {
+    list-style: none;
+    float: right;
+}
+
+#navbar ul li {
+    float: left;
+}
+
+#navbar ul li a {
+    display: block;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Showcase */
+#showcase {
+   
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+    text-align: center;
+    padding: 100px;
+}
+
+#showcase .btn {
+    margin-top: 250px;
+}
+
+/* Projects */
+#projects {
+    padding: 80px 0;
+}
+
+.projects-row {
+    display: flex;
+}
+
+.projects-row img {
+    width: 100%;
+}
+
+/* About */
+#about {
+    padding: 100px 0;
+    background: rgb(240, 240, 240);
+}
+
+.about-row {
+    display: flex;
+}
+
+.about-row-experience,
+.about-row-me {
+    background-color: rgb(240, 240, 240);
+    width: 100%;
+    padding-left: 50px;
+}
+.img-about{
+background-color: hsla(0, 0%, 53%, 0.2);
+}
+
+.me-about{
+    font-size: 20px;
+    color: #373237;
+}
+/* Contact */
+#contact {
+    padding: 50px 0;
+}
+
+.contact-row {
+    display: flex;
+}
+/* contactame */
+.contact-row-icon {
+    width: 40%;
+    text-align: center;
+}
+/* contactame */
+.contact-row-icon img {
+    height: 45px;
+}
+
+/* Footer */
+#mainfooter {
+    background: hsl(150, 12%, 93%);
+    text-align: center;
+    padding: 30px;
+}
+
+
+/* styles.css */
+.github-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #000000;
+    background-color: hsla(294, 22%, 82%, 0.334);
+    border: none;
+    border-radius: 6px;
+    text-decoration: none;
+    box-shadow: 0 2px 4px rgba(27, 31, 35, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.github-button:hover {
+    background-image: linear-gradient( 102.4deg,  rgba(253,189,85,1) 7.8%, rgba(249,131,255,1) 100.3% ) !important;
+}
+
+
+.linkedin-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #000000;
+    background-color: hsla(300, 17%, 75%, 0.589);
+    border: none;
+    border-radius: 6px;
+    text-decoration: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.linkedin-button:hover {
+    background-image: linear-gradient( 102.4deg,  rgba(253,189,85,1) 7.8%, rgba(249,131,255,1) 100.3% ) !important;
+}
+
+.tecnologia {
+    display: inline-block;
+    margin: 15px;
+    margin: auto;
+    width: 90%;
+    max-width: 600px;
+    max-height: 90%;
+    background-color:rgba(255, 255, 255, 0.138);
+    border-radius: 6px;
+    padding: 3em 2.5em;
+    display: grid;
+    gap: 1em;
+    place-items: center;
+    grid-auto-columns: 100%;
+    transform: var(--transform);
+    transition:var(--transition);  
+}
+
+.tecnologia img {
+    max-width: 100px;
+    height: auto;
+    opacity: 6; 
+    pointer-events: unset; 
+    transition: opacity .6s; 
+    --transform: translateY(0); 
+    --transition: transform .10s .10s; 
+  
+
+}
+.logohtml{
+    max-width: 19px;
+}
+
+.tecnologia p {
+    font-size: 14px;
+}
+
+
+/* Estilos para el modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    overflow: auto; /* Agrega esta línea para habilitar el desplazamiento */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    max-width: 80%;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2); /* Agrega una sombra al modal */
+    position: relative; /* Ajusta la posición del contenido relativo */
+}
+
+/* Resto de estilos se mantienen iguales */
+
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: hsla(0, 28%, 79%, 0.577);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-content img {
+    max-width: 100%;
+    height: auto;
+}
+
+.imgProjecto{
+    width: 100%;
+    height: 80%;
+}
